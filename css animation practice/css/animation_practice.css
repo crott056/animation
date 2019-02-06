@@ -1,0 +1,107 @@
+/* this is where all of your CSS styles go */
+@font-face {
+	font-family: SFNSDisplay;
+	src:url(../fonts/SFNSDisplay-Semibold.otf);
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+.grid_container {
+	width: 500px;
+	height: 100px;
+	position: relative;
+	left: 40%;
+	top: 20%;
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.SFNSDisplay {
+	font-family: 'SFNSDisplay';
+	font-size: 10em;
+	float: left;
+	margin-left: 5px;
+  position: relative;
+}
+
+@keyframes s_fade {
+	0% { opacity: 0; color: black; left: 0px; top: 0px;}
+  20% { opacity: 1; color: black; left: 0px; top: 0px; }
+  80% { opacity: 1; color: black; left: 335px; top: 0px; }
+	100% { opacity: 1; color: #d62a2a; left: 335px; top: 0px; }
+}
+
+.s {
+	opacity: 0;
+	animation: s_fade 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes l_fade {
+	0% { opacity: 0;}
+  20% { opacity: 1; color: black;}
+  80% { opacity: 1; color: black;}
+	100% { opacity: 1; color:#d62a2a; }
+}
+
+.l {
+	opacity: 0;
+	animation: l_fade 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes i_fade {
+	0% { opacity: 0;}
+  20% { opacity: 1; color: black;}
+  80% { opacity: 1; color: black;}
+	100% { opacity: 1; color:#d62a2a; }
+}
+
+.i {
+	opacity: 0;
+	animation: i_fade 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes p_fade {
+	0% { opacity: 0;}
+  20% { opacity: 1; color: black;}
+  80% { opacity: 1; color: black;}
+	100% { opacity: 1; color:#d62a2a; }
+}
+
+.p {
+	opacity: 0;
+	animation: p_fade 3s;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+/* Animation Keyframes */
+
+@keyframes rotate {
+	0% {opacity: 0; transform: rotate(0deg);}
+  20% {opacity: 0; transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+	}
+
+.lips {
+  width:200px;
+  height: 145px;
+  background: url("../lips2.png");
+	position:absolute;
+	left:40%;
+	top:45%;
+	margin-left:-150px;
+	margin-top:-150px;
+	z-index: -1;
+
+	transform-origin: 50% 50%;
+	animation: rotate 9s infinite linear;
+}
